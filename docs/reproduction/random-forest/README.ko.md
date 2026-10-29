@@ -39,4 +39,6 @@ python tools/reproduce_random_forest.py --bootstrap --reference docs/reproductio
 
 Linux/Windows의 Python 3.11에서 새 환경을 만드는 [자동 검사](../../../.github/workflows/random-forest-reproduction.yml)를 함께 준비했습니다. 실제 GitHub 실행 결과와 로컬 결과는 구분해 기록합니다. 운영체제·Python 패치 버전·모든 wheel의 해시까지 고정한 것은 아닙니다.
 
+[팩트] 2026-10-29 게시 커밋 `6b7d4aa`의 [GitHub 실행 40969888400](https://github.com/Joon-Jeremy-Chun/Machine_Learning_summary/actions/runs/40969888400)에서 Linux·Windows 두 작업이 모두 성공했습니다. 새 고정 환경 설치·`pip check`·원본 노트북 전체 실행·예측 일치를 확인했습니다. [결과 JSON](2026-10-29/hosted-ci.json)은 해당 커밋의 기록이며 후속 실행은 Actions에서 확인합니다.
+
 이번 결과는 기존 예제 재현이라는 운영 검증이며 새 연구 가설을 판정한 것이 아닙니다. 정책에 따라 로그와 인계 기록으로 묶어 보존합니다. 외부 데이터가 필요한 회귀·사기 탐지 등 다른 노트북의 전체 실행 상태는 별도입니다.

@@ -6,7 +6,7 @@
   "original_notebook_unchanged": true,
   "source_sha256": "0b33de10ea87252aafbe1262f535be98638bbf6db368b9721a7a8c709781c541",
   "runtime_lock_sha256": "62f7ae2a70bec6c20353d86943da88f47fa83ff0704a0f23d1eb5172001d72cb",
-  "linux_only_pins": "Two marker entries reviewed from upstream metadata; hosted install checked separately.",
+  "linux_only_pins": "Reviewed from upstream metadata and installed successfully in hosted Linux run 40969888400; Windows hosted run also passed.",
   "scope": "Existing notebook reproduction, no new research hypothesis or model comparison.",
   "hash_scope": "Raw hashes describe Windows execution checkout bytes; LF-normalized hashes match the Git objects.",
   "source_text_lf_sha256": "bab46e3644e69b8e2ce71b12a5f8fd889ae5a3261aa579d2a59626121de186cf",

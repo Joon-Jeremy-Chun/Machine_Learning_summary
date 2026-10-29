@@ -20,3 +20,8 @@ The existing Iris reference ran unchanged in two clean environments with matchin
 predictions. Read the [current handoff](../docs/handoffs/HANDOFF_2026-10-29_clean_iris_reproduction.md).
 This is operational reproduction, not a new research/model-comparison experiment.
 Hosted Linux/Windows state is verified separately after publication.
+
+Published implementation `6b7d4aa02f8c61103e4ff5b3be56589e4e47c5db` matched origin/master.
+Hosted run 40969888400 succeeded on Linux and Windows. The original 13 files,
+HEAD and status matched the preservation baseline. Dated hosted evidence is linked
+from the current reproduction guide and handoff.

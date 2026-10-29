@@ -1,0 +1,11 @@
+{
+  "head_sha": "6b7d4aa02f8c61103e4ff5b3be56589e4e47c5db",
+  "run_id": 40969888400,
+  "html_url": "https://github.com/Joon-Jeremy-Chun/Machine_Learning_summary/actions/runs/40969888400",
+  "conclusion": "success",
+  "jobs": [
+    {"name": "Python 3.11 / windows-latest", "conclusion": "success"},
+    {"name": "Python 3.11 / ubuntu-latest", "conclusion": "success"}
+  ],
+  "scope": "Fresh locked venv installation, pip check, original notebook execution, reviewed output match and archive validation."
+}

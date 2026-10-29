@@ -53,6 +53,8 @@ The fixed split has 42 correct predictions out of 45 (93.33%); three virginica o
 
 The [workflow](../../../.github/workflows/random-forest-reproduction.yml) creates new locked venvs on Linux and Windows with Python 3.11, repeats the whole notebook and compares the reviewed output. Hosted results are confirmed separately from local execution.
 
+Both hosted jobs succeeded for published commit `6b7d4aa` on 2026-10-29: [run 40969888400](https://github.com/Joon-Jeremy-Chun/Machine_Learning_summary/actions/runs/40969888400), [recorded conclusions](2026-10-29/hosted-ci.json). This includes clean installation, `pip check`, unchanged-source notebook execution and the reviewed prediction match on both operating systems. The dated record describes that commit; subsequent runs appear in Actions.
+
 A fixed version set does not pin the operating system, Python micro-version or package wheels by hash. One stratified split and impurity importance do not establish generalization stability or causality. No additional model variants, new evaluation protocol, real-world cohort or performance benchmark was introduced. These are operational reproduction records under the owner's simple-record policy, not a new research experiment.
 
 References: [NBClient execution API](https://nbclient.readthedocs.io/en/latest/client.html), [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html).
