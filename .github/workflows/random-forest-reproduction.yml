@@ -1,0 +1,45 @@
+name: Iris notebook reproduction
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: iris-reproduction-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PYTHONUTF8: '1'
+
+jobs:
+  reproduce:
+    name: Python 3.11 / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            environment-python: .venv/bin/python
+          - os: windows-latest
+            environment-python: .venv/Scripts/python.exe
+    steps:
+      - name: Check out public source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.11'
+      - name: Install a new locked environment and execute the original notebook
+        run: python tools/reproduce_random_forest.py --bootstrap --reference docs/reproduction/random-forest/2026-10-29/prediction-fingerprint.json
+      - name: Validate source and documentation in the installed environment
+        run: ${{ matrix.environment-python }} tools/validate_archive.py

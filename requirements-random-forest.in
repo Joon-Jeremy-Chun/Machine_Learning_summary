@@ -1,0 +1,5 @@
+# Minimal notebook-execution environment; not the full historical archive.
+pandas
+scikit-learn
+nbclient
+ipykernel

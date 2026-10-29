@@ -1,0 +1,18 @@
+[[15  0  0]
+ [ 0 15  0]
+ [ 0  3 12]]
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        15
+  versicolor       0.83      1.00      0.91        15
+   virginica       1.00      0.80      0.89        15
+
+    accuracy                           0.93        45
+   macro avg       0.94      0.93      0.93        45
+weighted avg       0.94      0.93      0.93        45
+
+petal width (cm)     0.486173
+petal length (cm)    0.392395
+sepal length (cm)    0.090503
+sepal width (cm)     0.030930
+dtype: float64

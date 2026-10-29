@@ -64,3 +64,7 @@ The focused suite checks gradients against known mathematics, the completed offl
 ## Credits and scope
 
 Original headers credit MultiCampus Data Science lectures. This is an educational archive. Exact original dates, personal/team roles and dataset versions remain unverified. New 2026 maintenance work is distinguished from historical material; no new license or deployment claim is assigned.
+
+## Start with a fully executed offline reference
+
+The [Iris random-forest reproduction](docs/reproduction/random-forest/README.md) installs a new locked Python 3.11 environment and executes the original notebook unchanged in an isolated Jupyter kernel. [한국어 안내](docs/reproduction/random-forest/README.ko.md). The [workflow](.github/workflows/random-forest-reproduction.yml) repeats the selected reference on Linux/Windows; it does not run the external-data notebook archive.

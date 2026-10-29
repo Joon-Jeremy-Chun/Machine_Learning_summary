@@ -41,3 +41,7 @@ Read the [reproduction guide](../../REPRODUCIBILITY.md) before execution. Inspec
 ## Attribution
 
 Original content was an empty notebook. The complete example is explicitly new maintenance reference work from 2026.
+
+## Whole-notebook clean reproduction — 2026-10-29
+
+The [fresh-environment guide](../../reproduction/random-forest/README.md) provides pinned dependencies, an explicit isolated Jupyter kernel, preserved executed output and a stable prediction fingerprint. The source notebook remains unchanged; the new evidence is separate from historical outputs.

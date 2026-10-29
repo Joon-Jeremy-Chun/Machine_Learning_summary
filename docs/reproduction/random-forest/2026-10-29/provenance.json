@@ -1,0 +1,14 @@
+{
+  "record_class": "operational-verification",
+  "first_clean_environment": "resolved public PyPI runtime",
+  "second_clean_environment": "separate venv installed from pinned runtime",
+  "prediction_fingerprints_equal": true,
+  "original_notebook_unchanged": true,
+  "source_sha256": "0b33de10ea87252aafbe1262f535be98638bbf6db368b9721a7a8c709781c541",
+  "runtime_lock_sha256": "62f7ae2a70bec6c20353d86943da88f47fa83ff0704a0f23d1eb5172001d72cb",
+  "linux_only_pins": "Two marker entries reviewed from upstream metadata; hosted install checked separately.",
+  "scope": "Existing notebook reproduction, no new research hypothesis or model comparison.",
+  "hash_scope": "Raw hashes describe Windows execution checkout bytes; LF-normalized hashes match the Git objects.",
+  "source_text_lf_sha256": "bab46e3644e69b8e2ce71b12a5f8fd889ae5a3261aa579d2a59626121de186cf",
+  "runtime_lock_text_lf_sha256": "b7341aa7c5b3c7e71501d7cdabc8d5882c0e160823b3071dc0c3370f2a409962"
+}

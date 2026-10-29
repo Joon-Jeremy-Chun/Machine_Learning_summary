@@ -2,7 +2,7 @@
 
 ## Environment
 
-Use Python/Jupyter with NumPy, pandas, matplotlib, seaborn, scikit-learn, statsmodels, patsy, IPython and pytest. `requirements-validation.txt` is an unpinned dependency group for maintenance checks, not an original lockfile. Existing Windows packages plus an isolated statsmodels/patsy installation passed the focused checks; a clean install and every full notebook have not been verified.
+Use Python/Jupyter with NumPy, pandas, matplotlib, seaborn, scikit-learn, statsmodels, patsy, IPython and pytest. `requirements-validation.txt` is an unpinned dependency group for maintenance checks, not an original lockfile. Existing Windows packages plus an isolated statsmodels/patsy installation passed the focused checks; the selected offline random-forest reference now has a [clean-install reproduction path](reproduction/random-forest/README.md). Clean execution of the other full notebooks remains unverified.
 
 ```bash
 python -m venv .venv
@@ -31,3 +31,7 @@ The classifiers use one 70/30 split; revised Iris classifiers stratify with seed
 ## Historical output
 
 Saved errors and results were preserved byte-for-byte at the output-object level. The new source can therefore appear above an old error/result. Read the appended maintenance note and detailed guide. Checkpoint notebooks remain original historical copies, not synchronized alternate entry points.
+
+## Selected clean reference — 2026-10-29
+
+Use the [Iris reproduction guide](reproduction/random-forest/README.md) for a new locked Python 3.11 venv and actual notebook kernel. Its runtime lock is separate from requirements-validation.txt and does not restore the external-data archive. Original notebook files/outputs are preserved; fresh execution artifacts have their own dated directory.
